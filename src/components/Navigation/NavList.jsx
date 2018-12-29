@@ -34,6 +34,17 @@ function GetNavList(config) {
     component: Link,
     to: "/about/"
   });
+
+  NavList.push({ divider: true });
+
+  NavList.push(
+    <img
+      title="talk2wall logo"
+      alt="talk2wall logo"
+      src="/logos/talk2wall.svg"
+    />
+  );
+
   return NavList;
 }
 export default GetNavList;
