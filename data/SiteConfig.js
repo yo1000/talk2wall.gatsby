@@ -1,42 +1,53 @@
 module.exports = {
-  siteTitle: "Gatsby Material Starter", // Site title.
-  siteTitleShort: "GM Starter", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "GatsbyJS Material Starter", // Alternative site title for SEO.
+  siteTitle: "Then go talk to a wall", // Site title.
+  siteTitleShort: "talk2wall", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleAlt: "Then go talk to a wall", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://vagr9k.github.io", // Domain of your website without pathPrefix.
-  pathPrefix: "/gatsby-material-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
+  siteUrl: "https://www.yo1000.com/", // Domain of your website without pathPrefix.
+  pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
-  siteDescription: "A GatsbyJS stater with Material design in mind.", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "Then go talk to a wall", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
-  siteFBAppID: "1825356251115265", // FB Application ID for using app insights
-  siteGATrackingID: "UA-47311644-4", // Tracking code ID for google analytics.
-  disqusShortname: "https-vagr9k-github-io-gatsby-material-starter", // Disqus shortname.
+  siteFBAppID: "", // FB Application ID for using app insights
+  siteGATrackingID: "UA-119554407-1", // Tracking code ID for google analytics.
+  disqusShortname: "", // Disqus shortname.
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
-  dateFormat: "DD/MM/YYYY", // Date format for display.
-  userName: "Material User", // Username to display in the author segment.
+  dateFormat: "YYYY.MM.DD", // Date format for display.
+  userName: "Yoichi KIKUCHI | yo1000", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "North Pole, Earth", // User location to display in the author segment.
-  userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
-  userDescription:
-    "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
+  userLocation: "Yokohama, JP", // User location to display in the author segment.
+  userAvatar: "https://api.adorable.io/avatars/285/yo1000.com", // User avatar to display in the author segment.
+  userDescription: `
+    二児のお父さんプログラマー.
+    Spring Framework には, 長いこと食べさせてもらってるので, そこそこ使えてるはず.
+    Spring Boot, Kotlin, IntelliJ IDEA は, とても良く手に馴染む 素晴らしい道具たち.
+    考え事は 紙ペンで. 紙は Life NOBLE NOTE, ペンは Pelikan Souverän, インクは SAILOR STORiA.
+    いくらか試した中で 今はこれがイチバンの組み合わせ.
+    `, // User description to display in the author segment.
+  // `
+  // Yeah, I like animals better than people sometimes...
+  // Especially dogs. Dogs are the best.
+  // Every time you come home, they act like they haven't seen you in a year.
+  // And the good thing about dogs... is they got different dogs for different people.
+  // `,
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/Vagr9K/gatsby-material-starter",
+      url: "https://github.com/yo1000/talk2wall.gatsby",
       iconClassName: "fa fa-github"
     },
     {
       label: "Twitter",
-      url: "https://twitter.com/Vagr9K",
+      url: "https://twitter.com/yoichi_kikuchi",
       iconClassName: "fa fa-twitter"
     },
     {
       label: "Email",
-      url: "mailto:vagr9k@gmail.com",
-      iconClassName: "fa fa-envelope"
+      url: "mailto:yoichi.kikuchi.aug@gmail.com",
+      iconClassName: "fa fa-paper-plane"
     }
   ],
-  copyright: "Copyright © 2017. Material User" // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2018. Yoichi KIKUCHI | yo1000" // Copyright string for the footer of the website and RSS feed.
 };
