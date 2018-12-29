@@ -20,9 +20,9 @@ module.exports = {
   userAvatar: "https://api.adorable.io/avatars/285/yo1000.com", // User avatar to display in the author segment.
   userDescription: `
     二児のお父さんプログラマー.
-    Spring Framework には, 長いこと食べさせてもらってるので, そこそこ使えてるはず.
+    Spring Framework には, 長いこと食べさせてもらってるので, そこそこ使えているはず.
     Spring Boot, Kotlin, IntelliJ IDEA は, とても良く手に馴染む 素晴らしい道具たち.
-    考え事は 紙ペンで. 紙は Life NOBLE NOTE, ペンは Pelikan Souverän, インクは SAILOR STORiA.
+    考え事は 紙ペン派. 紙は Life NOBLE NOTE, ペンは Pelikan Souverän, インクは SAILOR STORiA.
     いくらか試した中で 今はこれがイチバンの組み合わせ.
     `, // User description to display in the author segment.
   // `
