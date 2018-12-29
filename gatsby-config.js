@@ -208,6 +208,8 @@ module.exports = {
           }
         ]
       }
-    }
+    },
+    'gatsby-redirect-from',
+    'gatsby-plugin-meta-redirect'
   ]
 };
