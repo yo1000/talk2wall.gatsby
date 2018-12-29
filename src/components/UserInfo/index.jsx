@@ -56,7 +56,7 @@ class UserInfo extends Component {
               <FontIcon iconClassName="fa fa-map-marker" />
             </IconSeparator>
           )}
-          <pre>{userDescription && userDescription.split(/[\n]+/).map(s => s.trim()).filter(s => s).join("\n") }</pre>
+          <p>{userDescription && userDescription}</p>
           {userLinksElement}
         </CardText>
       </Card>
