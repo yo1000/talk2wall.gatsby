@@ -1,8 +1,9 @@
 @import '~react-md/src/scss/react-md';
-$md-primary-color: $md-grey-400;
-$md-secondary-color: $md-red-800;
-$md-tertiary-color: $md-grey-300;
+$md-primary-color: $md-deep-orange-800;     // $md-grey-400;
+$md-secondary-color: $md-deep-orange-500;   // $md-red-800;
+$md-tertiary-color: $md-grey-50;            // $md-grey-300;
 
+html,
 .main-container,
 .darker-background {
     background-color: $md-tertiary-color;
@@ -11,6 +12,23 @@ $md-tertiary-color: $md-grey-300;
 a:link {
     color: $md-secondary-color;
     text-decoration: none;
+}
+
+.footer {
+    background: transparent;
+    padding: .25rem 1rem .5rem 1rem;
+}
+
+h1, h2 {
+    margin-top: 3rem;
+}
+
+h3, h4 {
+    margin-top: 2rem;
+}
+
+h5, h6 {
+    margin-top: 1.5rem;
 }
 
 .gatsby-highlight-code-line {
