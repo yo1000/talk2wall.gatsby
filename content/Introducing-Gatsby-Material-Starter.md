@@ -8,7 +8,7 @@ tags:
     - material
     - starter
 
-date: "2018-07-02"
+date: "1970-01-01"
 ---
 
 Around a year ago, this project was one of the first ones ported to the `v1` version of GatsbyJS.
