@@ -138,7 +138,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 
 There are two ways to create links.
 
-```no-highlight
+```no-highlight{numberLines: true}
 [I'm an inline-style link](https://www.google.com)
 
 [I'm a reference-style link][Arbitrary case-insensitive reference text]
@@ -180,7 +180,7 @@ Some text to show that the reference links can follow later.
 
 ## Images
 
-```no-highlight
+```no-highlight{numberLines: true}
 Here's our logo (hover to see the title text):
 
 Inline-style:
