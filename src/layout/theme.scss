@@ -3,11 +3,6 @@ $md-primary-color: $md-deep-orange-800;     // $md-grey-400;
 $md-secondary-color: $md-deep-orange-500;   // $md-red-800;
 $md-tertiary-color: $md-grey-50;            // $md-grey-300;
 
-html {
-    font-feature-settings: "palt";
-    letter-spacing: .015625rem;
-}
-
 html,
 .main-container,
 .darker-background {
@@ -25,6 +20,21 @@ a:link {
     padding: .25rem 1rem .5rem 1rem;
 }
 
+.md-text,
+.md-text--secondary,
+.md-card-text,
+html, p,
+h4, h5, h6 {
+    font-feature-settings: "palt";
+    letter-spacing: .015625rem;
+}
+
+.md-display-1,
+.md-display-2,
+h1, h2, h3 {
+    letter-spacing: .03125rem;
+}
+
 h1 {
     margin-top: 3rem;
 }
@@ -35,16 +45,6 @@ h2, h3 {
 
 h4, h5, h6 {
     margin-top: 1.5rem;
-}
-
-.md-display-1,
-.md-display-2,
-h1, h2, h3 {
-    letter-spacing: .03125rem;
-}
-
-h4, h5, h6 {
-    letter-spacing: .015625rem;
 }
 
 ul {
@@ -59,6 +59,7 @@ ul {
     font-size: 20px;
     line-height: 1.75rem;
 }
+
 .gatsby-highlight-code-line {
     display: block;
     margin-right: -1em;
