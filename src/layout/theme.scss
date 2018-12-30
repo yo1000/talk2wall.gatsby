@@ -3,6 +3,11 @@ $md-primary-color: $md-deep-orange-800;     // $md-grey-400;
 $md-secondary-color: $md-deep-orange-500;   // $md-red-800;
 $md-tertiary-color: $md-grey-50;            // $md-grey-300;
 
+html {
+    font-feature-settings: "palt";
+    letter-spacing: .015625rem;
+}
+
 html,
 .main-container,
 .darker-background {
@@ -12,6 +17,7 @@ html,
 a:link {
     color: $md-secondary-color;
     text-decoration: none;
+    word-break: break-word;
 }
 
 .footer {
@@ -29,6 +35,14 @@ h3, h4 {
 
 h5, h6 {
     margin-top: 1.5rem;
+}
+
+ul {
+    margin-bottom: 1.5rem;
+}
+
+.post-tag-container {
+    margin-top: .5rem;
 }
 
 .fa-paper-plane {
