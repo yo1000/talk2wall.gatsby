@@ -25,16 +25,26 @@ a:link {
     padding: .25rem 1rem .5rem 1rem;
 }
 
-h1, h2 {
+h1 {
     margin-top: 3rem;
 }
 
-h3, h4 {
+h2, h3 {
     margin-top: 2rem;
 }
 
-h5, h6 {
+h4, h5, h6 {
     margin-top: 1.5rem;
+}
+
+.md-display-1,
+.md-display-2,
+h1, h2, h3 {
+    letter-spacing: .03125rem;
+}
+
+h4, h5, h6 {
+    letter-spacing: .015625rem;
 }
 
 ul {
