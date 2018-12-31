@@ -142,7 +142,7 @@ OS name: "mac os x", version: "10.13.3", arch: "x86_64", family: "mac"
 
 
 #### プロファイル`C`
-`kotlin-stdlib:jar:1.0.0`に依存。プロファイル`C`を指定したため、プロファイル側での依存はない状態が適用される結果となった。
+`kotlin-stdlib:jar:1.0.0`に依存。プロファイル`C`を指定したため、プロファイル側での依存はない状態が適用される結果となった。
 
 ```sh{4}
 ./mvnw clean dependency:tree -P C
