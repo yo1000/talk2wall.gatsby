@@ -51,6 +51,17 @@ ul {
     margin-bottom: 1.5rem;
 }
 
+blockquote {
+    margin: .5rem 0;
+    padding: 1rem 2rem;
+    border-left: 5px solid $md-grey-500;
+    background: $md-grey-200;
+}
+
+blockquote p {
+    color: $md-grey-800;
+}
+
 .post-tag-container {
     margin-top: .5rem;
 }
@@ -80,11 +91,10 @@ ul {
 
 .gatsby-highlight pre[class*="language-"] {
     margin: 0 0 0 -1rem;
-    padding: 0;
+    padding: .5rem 1rem;
     overflow: initial;
     float: left; /* 1 */
     min-width: 100%; /* 2 */
-    padding: .5rem 1rem;
 }
 
 .gatsby-highlight pre[class*="language-"].line-numbers {
@@ -97,5 +107,6 @@ ul {
 }
 
 .main-content :not(pre) > code[class*="language-"] {
+    margin: 0 .0625rem;
     padding: 0.0625rem .375rem;
 }
