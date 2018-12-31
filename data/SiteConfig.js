@@ -21,9 +21,9 @@ module.exports = {
   userDescription: `
     二児のお父さんプログラマー。
     Spring Frameworkには長いこと食べさせてもらってるので、そこそこ使えているはず。
-    Spring Boot, Kotlin, IntelliJ IDEAは、とても良く手に馴染む素晴らしい道具たち。
-    考え事は紙ペン派。紙はLife NOBLE NOTE、ペンは Pelikan Souverän、インクは SAILOR STORiA。
-    いくらか試した中で今はこれがイチバンの組み合わせ。
+    Spring Boot, Kotlin, IntelliJ IDEAは、どれも素晴らしい馴染みの道具たち。
+    考え事は紙ペン派。紙はLife NOBLE NOTE、ペンはPelikan Souverän、インクはSAILOR STORiA。
+    いくらか試した中で、今はこれがイチバン好きな組み合わせ。
     `, // User description to display in the author segment.
   // `
   // Yeah, I like animals better than people sometimes...
