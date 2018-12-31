@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-material",
-  "description": "GatsbyJS Material Blog theme.",
+  "name": "talk2wall",
+  "description": "Then go talk to a wall",
   "version": "2.0.0",
-  "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
+  "author": "yo1000 <yoichi.kikuchi.aug@gmail.com>",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "gatsby": "2.0.40",
