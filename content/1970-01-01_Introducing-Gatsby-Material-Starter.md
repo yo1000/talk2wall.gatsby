@@ -1,14 +1,12 @@
 ---
 title: "Introducing Gatsby Material Starter"
-cover: "starter-logo-1024.png"
+date: "1970-01-01"
+cover: "cover-forest.jpg"
 category: "gatsby"
 tags:
-
-    - gatsby
-    - material
-    - starter
-
-date: "1970-01-01"
+- gatsby
+- material
+- starter
 ---
 
 Around a year ago, this project was one of the first ones ported to the `v1` version of GatsbyJS.

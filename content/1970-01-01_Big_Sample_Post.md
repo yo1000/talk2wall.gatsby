@@ -1,14 +1,14 @@
 ---
 title: "Big Test"
-cover: "5.jpg"
-category: "moar"
-date: "1970-01-01"
 slug: "Big-Sample_Test"
+date: "1970-01-01"
+cover: "cover-forest.jpg"
+category: "moar"
 tags:
-    - test
-    - huge
+- test
+- huge
 redirect_from:
-  - /posts/big-sample-test
+- /posts/big-sample-test
 ---
 
 # NOTE: This "post" is based on [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and is meant to test styling of Markdown generated documents.

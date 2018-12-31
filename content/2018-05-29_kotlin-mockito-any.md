@@ -1,0 +1,40 @@
+---
+title: "KotlinでMockitoを使うとanyがうまくいかない"
+date: "2018-05-29"
+cover: "cover-tech.jpg"
+category: "Tech"
+tags:
+- kotlin
+- mockito
+- testing
+redirect_from:
+- /posts/2018-05-29-kotlin-mockito-any.html
+---
+
+テストでMockitoを使っていると、`any(Class<T>)`を使いたくなる場面は、そこそこ多いように思います。ところが、Kotlinでテストを書いていると、これを受け取ったKotlin実装のメソッドで以下のようなエラーが吐かれてしまい、テストが書けません。
+
+> java.lang.IllegalStateException: Mockito.any(Hoge::class.java) must not be null
+
+調べてみると、[近い内容でお困りのケース](https://qiita.com/ko2ic/items/9a0b76f54e9e5e203d77)が見つかったので、これを参考に対応してみました。
+
+
+## 要件
+- Kotlin 1.2.21
+- Mockito 1.10.19
+
+
+## 対処法
+一度Kotlin実装された別のメソッドでラップしてあげて、Kotlinで実装されたメソッドに、Null安全な状態で渡してあげれば良いようでした。以下のようにします。
+
+```kotlin{numberLines:true}
+@Test
+fun test() {
+    val invokerMock = Mockito.mock(Invoker::class.java)
+    // 中略
+    Mockito.verify(invokerMock, Times(1)).invoke(any(Param::class.java))
+}
+
+private fun <T> any(clazz: Class<T>): T {
+    return Mockito.any(clazz)
+}
+```
