@@ -24,6 +24,7 @@ module.exports = {
     Spring Boot, Kotlin, IntelliJ IDEAは、どれも素晴らしい馴染みの道具たち。
     考えごとは紙ペン派。紙はLife NOBLE NOTE、ペンはPelikan Souverän、インクはSAILOR STORiA。
     いくらか試したなかで、今はこれがイチバン好きな組み合わせ。
+    // Java(2005-), Kotlin(2016-), Spring Framework(2009-), Spring Boot(2013-)
     `, // User description to display in the author segment.
   // `
   // Yeah, I like animals better than people sometimes...
