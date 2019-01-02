@@ -27,7 +27,7 @@ Spring Bootにはプロファイルという、環境ごとの設定やBean構�
 ## 基本的な使い方
 以下のようなテストがあった場合に、`user`へ何がDIされるかをプロファイルを使って切り替えてみます。
 
-```kotlin
+```kotlin{numberLines:true}
 @RunWith(SpringRunner::class)
 @SpringBootTest
 class DemoSpringProfileApplicationTests {
@@ -49,7 +49,7 @@ class User(val name: String)
 
 プロファイルは、`@Profile`アノテーションで名前を付けて設定します。
 
-```kotlin{1,8}
+```kotlin{numberLines:true}{1,8}
 @Profile("alice")
 @Configuration
 class AliceConfiguration {
@@ -150,7 +150,7 @@ Bob
 
 `spring.profiles.default`を設定する以外にも、未設定時に`default`がデフォルトプロファイになるのを利用して、以下のように対応することも可能です。
 
-```kotlin{1}
+```kotlin{numberLines:true}{1}
 @Profile("default")
 @Configuration
 class DefaultConfiguration {
@@ -219,7 +219,7 @@ Spring Bootでは、存在しないプロファイルが指定された場合で
 
 `default`プロファイルを設定したクラスの記述を変更します。
 
-```kotlin{1}
+```kotlin{numberLines:true}{1}
 @ConditionalOnExpression("'\${spring.profiles.active}' != 'alice' && '\${spring.profiles.active}' != 'bob'")
 //@Profile("default")
 @Configuration
@@ -269,7 +269,7 @@ DIコンテナへのオブジェクト登録条件として使えるようにす
 
 `alice`プロファイルに、別の名前を追加してみます。また、`@ConditionalOnExpression`にも除外条件を追加しておきます。
 
-```kotlin{1,10-11}
+```kotlin{numberLines:true}{1,10-11}
 @Profile("alice", "allie", "elsie")
 @Configuration
 class AliceConfiguration {
@@ -322,7 +322,7 @@ Alice
 
 以下のように、除外したいプロファイル名の先頭に`!`をつけることで否定の意味になります。ただし、除外されたプロファイル以外のすべて、という意味になるため、使い所はあまり多くはなさそうです。
 
-```kotlin{8}
+```kotlin{numberLines:true}{8}
 @Profile("default")
 @Configuration
 class DefaultConfiguration {

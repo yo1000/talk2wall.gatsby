@@ -42,7 +42,7 @@ Keycloak 3から、Keycloak 4への移行によって、基本的な使い方に
 
 https://github.com/yo1000/kc4-boot2-resource/blob/master/kc4.setup.sh
 
-```bash
+```bash{numberLines:true}
 #!/usr/bin/env bash
 
 cd `dirname $0`
@@ -207,7 +207,7 @@ https://www.keycloak.org/docs/latest/server_admin/index.html#the-admin-cli
 
 https://github.com/yo1000/kc4-boot2-resource/blob/master/kc4-boot2-resource-client/pom.xml
 
-```xml{14-19,51-55,70-78}
+```xml{numberLines:true}{14-19,51-55,70-78}
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -324,7 +324,7 @@ https://github.com/yo1000/kc4-boot2-resource/blob/master/kc4-boot2-resource-clie
 
 https://github.com/yo1000/kc4-boot2-resource/blob/master/kc4-boot2-resource-client/src/main/resources/application.yml
 
-```yaml
+```yaml{numberLines:true}
 server:
   port: 8081
 
@@ -341,7 +341,7 @@ keycloak:
 
 https://github.com/yo1000/kc4-boot2-resource/blob/master/kc4-boot2-resource-server/src/main/resources/application.yml
 
-```yaml
+```yaml{numberLines:true}
 server:
   port: 8082
 
@@ -366,7 +366,7 @@ keycloak:
 
 https://github.com/yo1000/kc4-boot2-resource/blob/master/kc4-boot2-resource-server/src/main/kotlin/com/yo1000/kc4boot2/ResourceServerApplication.kt
 
-```kotlin{35-59}
+```kotlin{numberLines:true}{35-59}
 package com.yo1000.kc4boot2
 
 import org.keycloak.adapters.AdapterDeploymentContext
@@ -494,7 +494,7 @@ class Kc4Controller(
 
 リソースサーバーではステートレスな認証を要し、Authorizationヘッダーにトークンが設定されて、他のSSOクライアントから認証が連携されます。つまりセッションを使用しません。そのため、`sessionAuthenticationStrategy`では、認証にセッションを使用しないことを設定します。
 
-```kotlin{33-50}
+```kotlin{numberLines:true}{33-50}
 package com.yo1000.kc4boot2
 
 import org.keycloak.adapters.AdapterDeploymentContext

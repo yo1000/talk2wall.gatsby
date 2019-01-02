@@ -27,13 +27,13 @@ Kotlin には変数展開機能があるため、`$`記号を使いたい場合�
 ## デモ
 通常の文字列内でのエスケープ
 
-```kotlin
+```kotlin{numberLines:true}
 println("\${xyz}") // OK: ${xyz}
 ```
 
 ヒアドキュメント内でのエスケープ
 
-```kotlin
+```kotlin{numberLines:true}
 println("""
 \${xyz}
 """.trimIndent()) // NG: Compile ERROR
