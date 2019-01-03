@@ -20,6 +20,29 @@ a:link {
     padding: .25rem 1rem .5rem 1rem;
 }
 
+.post-page-contents .md-card.post,
+.post-page-contents .md-card.post .md-card-text {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.post-page-contents .post .post-body > * {
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.post-page-contents .post .post-body .gatsby-highlight,
+.post-page-contents .post .post-body .gatsby-resp-image-wrapper {
+    max-width: none !important;
+    margin-left: -24px !important;
+    margin-right: -24px !important;
+}
+
+.post-page-contents .post .post-body .gatsby-resp-image-wrapper {
+    border: 1px solid $md-grey-200;
+    border-width: 1px 0;
+}
+
 .md-card {
     border-radius: 3px;
 }
@@ -60,9 +83,9 @@ ul {
 }
 
 blockquote {
-    margin: .5rem 0;
-    padding: 1rem 2rem;
-    border-left: 5px solid $md-grey-500;
+    margin: .5rem -24px;
+    padding: 1rem calc(24px - .25rem);
+    border-left: .25rem solid $md-grey-500;
     background: $md-grey-200;
 }
 
@@ -92,15 +115,13 @@ blockquote p {
     display: block;
     margin-right: -1em;
     margin-left: -1em;
-    padding-right: 1em;
-    padding-left: 0.75em;
+    padding-left: .75em;
     border-left: 0.25em solid #f99;
 }
 
 .gatsby-highlight {
     background: #1d1f21;
     border: 1px solid #1d1f21;
-    border-radius: 0.3em;
     margin: 0.5em 0;
     padding: 0 1rem;
     overflow: auto;
@@ -108,22 +129,26 @@ blockquote p {
 
 .gatsby-highlight pre[class*="language-"] {
     margin: 0 0 0 -1rem;
-    padding: .5rem 1rem;
+    padding: .5rem 0 .5rem 24px;
     overflow: initial;
     float: left; /* 1 */
     min-width: 100%; /* 2 */
 }
 
 .gatsby-highlight pre[class*="language-"].line-numbers {
-    padding: .5rem 4.5rem;
+    padding: .5rem 5rem;
 }
 
 .line-numbers .line-numbers-rows {
-    min-width: 3.5rem;
-    padding: .5rem 0 .5rem 1rem;
+    min-width: 4rem;
+    padding: .5rem 0 .5rem 24px;
 }
 
 .main-content :not(pre) > code[class*="language-"] {
     margin: 0 .0625rem;
     padding: 0.0625rem .375rem;
+}
+
+.line-numbers-rows > span:before {
+    padding-right: .5rem;
 }
