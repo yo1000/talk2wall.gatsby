@@ -66,12 +66,12 @@ ul {
 
 blockquote {
     margin: .5rem -24px;
-    padding: 1rem calc(24px - .25rem);
-    border-left: .25rem solid $md-grey-500;
-    background: $md-grey-200;
+    padding: 1rem calc(1rem + 24px - 6px);
+    border-left: 6px solid rgba(119, 136, 153, .5); // slategray 50%
+    background: #f5f2f0;
 
     p {
-        color: $md-grey-800;
+        color: slategray;
     }
 }
 
@@ -125,8 +125,9 @@ blockquote {
 }
 
 .gatsby-highlight {
-    background: #1d1f21;
-    border: 1px solid #1d1f21;
+    width: calc(100% + 48px + 2rem);
+    background: none;
+    border: 0;
     margin: 0.5em 0;
     padding: 0 1rem;
     overflow: auto;
@@ -134,9 +135,10 @@ blockquote {
     pre[class*="language-"] {
         margin: 0 0 0 -1rem;
         padding: .5rem 0 .5rem 24px;
-        overflow: initial;
-        float: left; /* 1 */
-        min-width: 100%; /* 2 */
+        overflow: auto;
+        float: left;
+        min-width: 100%;
+        max-width: 100%;
     }
 
     pre[class*="language-"].line-numbers {
