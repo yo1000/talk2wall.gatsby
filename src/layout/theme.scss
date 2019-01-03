@@ -20,6 +20,14 @@ a:link {
     padding: .25rem 1rem .5rem 1rem;
 }
 
+.md-card {
+    border-radius: 3px;
+}
+
+.md-card .md-media {
+    border-radius: 3px 3px 0 0;
+}
+
 .md-text,
 .md-text--secondary,
 .md-card-text,
@@ -62,7 +70,7 @@ blockquote p {
     color: $md-grey-800;
 }
 
-.main-container .md-background--card {
+.index-container .md-background--card {
     padding: 0;
     margin: 10px;
 }
