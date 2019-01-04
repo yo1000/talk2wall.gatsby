@@ -1,6 +1,6 @@
 ---
 title: "Gatsbyことはじめ"
-date: "2019-01-03T00:00:00"
+date: "2019-01-03"
 cover: "cover-tech.jpg"
 category: "Tech"
 tags:
