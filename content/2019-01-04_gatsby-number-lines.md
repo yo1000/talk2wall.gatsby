@@ -1,6 +1,6 @@
 ---
 title: "Gatsby Material Starterで行番号を表示する"
-date: "2019-01-04T02:00:00"
+date: "2019-01-04"
 cover: "cover-tech.jpg"
 category: "Tech"
 tags:
@@ -14,7 +14,7 @@ tags:
 - NPM 6.5.0
 - Gatsby CLI 2.4.7
 - Gatsby 2.0.40
-- Vagr9K/gatsby-material-starter 2019-01-04現在
+- Vagr9K/gatsby-material-starter 2019.01.04現在
 - gatsby-remark-prismjs 3.0.3
 
 ```console
