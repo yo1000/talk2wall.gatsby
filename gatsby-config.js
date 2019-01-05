@@ -175,8 +175,8 @@ module.exports = {
                 title: edge.node.frontmatter.title,
                 description: edge.node.excerpt,
                 author: rssMetadata.author,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
+                url: rssMetadata.site_url + (edge.node.fields.slug).split(/\//).map(s => encodeURIComponent(s)).join("/"),
+                guid: rssMetadata.site_url + (edge.node.fields.slug).split(/\//).map(s => encodeURIComponent(s)).join("/"),
                 custom_elements: [{ "content:encoded": edge.node.html }]
               }));
             },
