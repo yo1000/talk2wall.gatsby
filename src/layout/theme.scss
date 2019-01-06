@@ -3,7 +3,7 @@ $md-primary-color: transparent; // $md-deep-orange-800; // $md-grey-400;
 $md-secondary-color: #e03022;   // $md-deep-orange-500; // $md-red-800;
 $md-tertiary-color: $md-grey-50;                        // $md-grey-300;
 
-.md-background--primary {
+header.md-background--primary {
     background: #f8d148; /* Old browsers */
     background: -moz-linear-gradient(left, #f8d148 15%, #e03022 55%, #550c06 90%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, #f8d148 15%,#e03022 55%,#550c06 90%); /* Chrome10-25,Safari5.1-6 */
