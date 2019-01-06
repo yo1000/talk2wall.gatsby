@@ -423,7 +423,7 @@ $ cd kc-resource-client
 ### 設定ファイルの配置
 リソースクライアント用の、構成ファイルをセットアップします。
 
-こちらでは、リソースサーバーでは設定しなかった`keycloak.json`が必要になります。[Set up Clients](#set-up-clients)で`$RES_CLI_ID`変数に取っておいた、クライアントIDを使用して、`keycloak.json`を出力します。
+こちらでは、リソースサーバーでは設定しなかった`keycloak.json`が必要になります。ここまでの手順で`$RES_CLI_ID`変数に取っておいた、クライアントIDを使用して、`keycloak.json`を出力します。
 
 ```console
 $ # Update Keycloak dependency version
@@ -621,10 +621,12 @@ $ ./mvnw clean spring-boot:run &
 以下URLにアクセスしてみます。<br>
 [http://localhost:28080/kc/resource/client/admin](http://localhost:28080/kc/resource/client/admin)
 
-Keycloakへリダイレクトされ、ログインを要求されます。<br>
+Keycloakへリダイレクトされ、ログインを要求されます。
+
 ![img/2017-12-18_kc-resource-demo-1.png](img/2017-12-18_kc-resource-demo-1.png)
 
-ログインすると、ロールに応じたメッセージが表示されます。<br>
+ログインすると、ロールに応じたメッセージが表示されます。
+
 ![img/2017-12-18_kc-resource-demo-2.png](img/2017-12-18_kc-resource-demo-2.png)
 
 

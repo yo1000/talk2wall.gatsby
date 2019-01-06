@@ -446,10 +446,12 @@ Available on:
 Hit CTRL-C to stop the server
 ```
 
-初回表示では、Keycloakへリダイレクトされ、ログインを要求されます。<br>
+初回表示では、Keycloakへリダイレクトされ、ログインを要求されます。
+
 ![img/2017-12-18_kc-resource-demo-1.png](img/2017-12-18_kc-resource-demo-1.png)
 
-ログインすると、画面にユーザー名が表示され、ボタンをクリックすると要求に応じたメッセージが表示されます。<br>
+ログインすると、画面にユーザー名が表示され、ボタンをクリックすると要求に応じたメッセージが表示されます。
+
 ![img/2018-01-07_kc-resource-demo-3.png](img/2018-01-07_kc-resource-demo-3.png)
 
 
