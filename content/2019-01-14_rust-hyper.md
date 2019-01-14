@@ -8,7 +8,10 @@ tags:
 - hyper
 ---
 
-Webサーバーつくるときは、[Hyper](https://docs.rs/hyper/0.12.20/hyper/)というのがデファクトらしい。(Webアプリケーションフレームワークとしてはまた別で、IronとかRocketとかがある。)
+Webサーバーをつくるときは、[Hyper](https://hyper.rs/)というのがデファクトらしいので、これを使ってみます。(Webアプリケーションフレームワークとしてはまた別で、IronとかRocketとかがある。)
+
+今回のコードサンプルは以下。<br>
+https://github.com/yo1000/rust-hyper
 
 
 ## 要件
