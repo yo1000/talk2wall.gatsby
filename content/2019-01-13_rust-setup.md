@@ -47,7 +47,7 @@ cargo 1.31.0 (339d9f9c8 2018-11-16)
 プロジェクト作成時に、Hello Worldまでは自動で作成してくれる。
 
 ```bash
-rust new --bin rust-hello
+cargo new --bin rust-hello
      Created binary (application) `rust-hello` package
 
 cd rust-hello/
