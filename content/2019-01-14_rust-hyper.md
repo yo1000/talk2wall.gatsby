@@ -11,7 +11,7 @@ tags:
 Webサーバーをつくるときは、[Hyper](https://hyper.rs/)というのがデファクトらしいので、これを使ってみます。(Webアプリケーションフレームワークとしてはまた別で、IronとかRocketとかがある。)
 
 今回のコードサンプルは以下。<br>
-https://github.com/yo1000/rust-hyper
+https://github.com/yo1000/rust-hyper/tree/705dc5ca10
 
 
 ## 要件
