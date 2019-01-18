@@ -12,7 +12,7 @@ Rustでコレクション操作をしてみようとしたところ、基本的�
 HTTPリクエストで与えられたクエリ文字列を、JSONに変換してレスポンスする、というのを例にします。
 
 今回のコードサンプルは以下。<br>
-https://github.com/yo1000/rust-hyper/tree/4223e61ff6
+https://github.com/yo1000/rust-hyper/tree/389b425ca8
 
 
 ## 要件
