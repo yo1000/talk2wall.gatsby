@@ -1,6 +1,6 @@
 ---
 title: "Rustでコレクション操作"
-date: "2019-01-17"
+date: "2019-01-18"
 cover: "cover-tech.jpg"
 category: "Tech"
 tags:
