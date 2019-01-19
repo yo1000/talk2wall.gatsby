@@ -77,7 +77,7 @@ gvm use `gvm list | grep -v gvm | grep -v '^ *$' | tr -d '=>' | tail`
 
 
 ## depのインストール
-depはパッケージマネージャ。Mavenとか、NPMとかと同じ。brew, sh, go等でインストールできます。
+depはパッケージマネージャ。Mavenとか、NPMとかと同じ。brew, sh, go等でインストールできます。depを使うにあたって、環境変数`GOPATH`の設定が必要になるので、このあたりも一緒に設定します。
 
 ```bash
 $ go get -u github.com/golang/dep/cmd/dep
@@ -91,6 +91,9 @@ dep:
  go compiler : gc
  platform    : darwin/amd64
  features    : ImportDuringSolve=false
+
+$ mkdir -p ~/Golang # Goのプロジェクト群を配置したい任意のディレクトリ
+$ export GOPATH=~/Golang
 ```
 
 
@@ -98,8 +101,11 @@ dep:
 プロジェクトは任意のディレクトリを作成して、バイナリは任意のファイルを作成してビルドする。いろいろやってくれたりはしないが、特別なルールもない。
 
 ```bash
-$ mkdir go-hello
-$ cd go-hello/
+$ mkdir -p $GOPATH/src/github.com/{username}/go-hello
+$ cd $GOPATH/src/github.com/{username}/go-hello
+
+$ dep init
+
 $ echo '
 package main
  
@@ -107,6 +113,9 @@ func main() {
     println("hello!")
 }
 '>main.go
+
+$ # 今回は使いませんが依存を追加する場合は以下のようにします(goファイルが存在しないと失敗します)
+$ # dep ensure -add github.com/{username}/{repository}
 
 $ go build
 $ ./go-hello
