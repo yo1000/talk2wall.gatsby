@@ -13,6 +13,17 @@ RustでWebサーバーを書いていたのですが、このところ非同期I
 というわけで環境構築用の自分用メモです。
 
 
+## 環境要件
+- Max OS X 10.13.6
+
+```
+$ sw_vers
+ProductName:	Mac OS X
+ProductVersion:	10.13.6
+BuildVersion:	17G65
+```
+
+
 ## GVMのインストール
 GVMはNVMとかと同じ、ランタイムのバージョンマネージャ。
 
@@ -25,9 +36,9 @@ Installed GVM v1.0.22
 Please restart your terminal session or to get started right away run
  `source /Users/xyz/.gvm/scripts/gvm`
 
-$ source /Users/xyz/.gvm/scripts/gvm 
+$ source ~/.gvm/scripts/gvm 
 $ gvm version
-Go Version Manager v1.0.22 installed at /Users/yo1000/.gvm
+Go Version Manager v1.0.22 installed at /Users/xyz/.gvm
 ```
 
 
@@ -57,6 +68,11 @@ Now using version go1.11.4
 
 $ go version
 go version go1.11.4 darwin/amd64
+
+$ echo "             
+source ~/.gvm/scripts/gvm
+gvm use `gvm list | grep -v gvm | grep -v '^ *$' | tr -d '=>' | tail`
+">>~/.bash_profile 
 ```
 
 
