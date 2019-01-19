@@ -76,6 +76,24 @@ gvm use `gvm list | grep -v gvm | grep -v '^ *$' | tr -d '=>' | tail`
 ```
 
 
+## depのインストール
+depはパッケージマネージャ。Mavenとか、NPMとかと同じ。brew, sh, go等でインストールできます。
+
+```bash
+$ go get -u github.com/golang/dep/cmd/dep
+
+$ dep version
+dep:
+ version     : devel
+ build date  : 
+ git hash    : 
+ go version  : go1.11.4
+ go compiler : gc
+ platform    : darwin/amd64
+ features    : ImportDuringSolve=false
+```
+
+
 ## プロジェクトの作成とビルド
 プロジェクトは任意のディレクトリを作成して、バイナリは任意のファイルを作成してビルドする。いろいろやってくれたりはしないが、特別なルールもない。
 
