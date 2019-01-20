@@ -21,7 +21,7 @@ export default class CategoryTemplate extends React.Component {
             </title>
             <link
               rel="canonical"
-              href={`${config.siteUrl}/categories/${category}`}
+              href={`${config.siteUrl}${config.pathPrefix}/categories/${category}`}
             />
           </Helmet>
           <PostListing postEdges={postEdges} />
