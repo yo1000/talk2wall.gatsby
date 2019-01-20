@@ -120,9 +120,9 @@ module.exports = {
         name: config.siteTitle,
         short_name: config.siteTitleShort,
         description: config.siteDescription,
-        start_url: "",
-        background_color: "#e0e0e0",
-        theme_color: "#c62828",
+        start_url: "/",
+        background_color: "#fafafa",
+        theme_color: "#e03022",
         display: "minimal-ui",
         icons: [
           {
