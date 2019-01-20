@@ -7,6 +7,7 @@ tags:
 - nodejs
 - nvm
 - gatsby
+- beginner
 ---
 
 環境移ったときなど、毎回調べ直している気がしたので自分用メモ。

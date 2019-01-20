@@ -5,6 +5,7 @@ cover: "cover-tech.jpg"
 category: "Tech"
 tags:
 - gatsby
+- beginner
 ---
 
 Gatsbyのはじめ方に少し手間取ったのでメモ。

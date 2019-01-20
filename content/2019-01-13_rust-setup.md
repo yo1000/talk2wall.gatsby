@@ -6,6 +6,7 @@ category: "Tech"
 tags:
 - rust
 - cargo
+- beginner
 ---
 
 環境移ったときなど、毎回調べ直している気がしたので自分用メモ。読み方は`rˈʌst`。

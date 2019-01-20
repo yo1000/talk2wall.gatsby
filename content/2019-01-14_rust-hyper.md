@@ -6,6 +6,7 @@ category: "Tech"
 tags:
 - rust
 - hyper
+- beginner
 ---
 
 Webサーバーをつくるときは、[Hyper](https://hyper.rs/)というのがデファクトらしいので、これを使ってみます。(Webアプリケーションフレームワークとしてはまた別で、IronとかRocketとかがある。)
