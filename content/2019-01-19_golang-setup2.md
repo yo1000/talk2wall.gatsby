@@ -1,17 +1,17 @@
 ---
-title: "Goインストールメモ(dep)"
-date: "2019-01-19"
+title: "Goインストールメモやりなおし(vgo)"
+date: "2019-01-27"
 cover: "cover-tech.jpg"
 category: "Tech"
 tags:
 - go
-- dep
+- vgo
 - beginner
 ---
 
-RustでWebサーバーを書いていたのですが、このところ非同期IOまわりの実装が活発なようで、シンプルに書こうと思うと、まだ発展途上な部分が目立ったので、筆休めにGoをはじめてみました。
+いまのGoは、バイナリ内にパッケージマネージャが同梱されていることを知ったのでやりなおし。
 
-というわけで環境構築用の自分用メモです。
+`dep`なんていらなかった。`dep`だと、`GOPATH`が必要だったり、ディレクトリ構成もそこそこ縛られたりするし、`go`コマンドにバンドルされている`vgo`のほうが良かった。
 
 
 ## 環境要件
@@ -77,52 +77,39 @@ gvm use `gvm list | grep -v gvm | grep -v '^ *$' | tr -d '=>' | tail`
 ```
 
 
-## depのインストール
-`dep`はパッケージマネージャ。Mavenとか、NPMとかと同じ。brew, sh, go等でインストールできます。depを使うにあたって、環境変数`GOPATH`の設定が必要になるので、このあたりも一緒に設定します。
-
-```bash
-$ go get -u github.com/golang/dep/cmd/dep
-
-$ dep version
-dep:
- version     : devel
- build date  : 
- git hash    : 
- go version  : go1.11.4
- go compiler : gc
- platform    : darwin/amd64
- features    : ImportDuringSolve=false
-
-$ mkdir -p ~/Golang # Goのプロジェクト群を配置したい任意のディレクトリ
-$ export GOPATH=~/Golang
-```
-
-
 ## プロジェクトの作成とビルド
-`GOPATH`を設定したあとは、そこまで気にするポイントは多くありません。
+プロジェクトは任意のディレクトリを作成して、バイナリは任意のファイルを作成してビルドする。いろいろやってくれたりはしないが、特別なルールもない。
+`go`コマンドに`vgo`がバンドルされているため、`go build`で依存解決も一緒にされる。
 
 ```bash
-$ mkdir -p $GOPATH/src/github.com/{username}/go-hello
-$ cd $GOPATH/src/github.com/{username}/go-hello
-
-$ dep init
+$ mkdir -p go-uuid
+$ cd go-uuid
 
 $ echo '
 package main
+
+import (
+  "fmt"
+  "github.com/satori/go.uuid"
+)
  
 func main() {
-    println("hello!")
+    fmt.Printf("%v\n", uuid.Must(uuid.NewV4()));
 }
 '>main.go
 
-$ # 今回は使いませんが依存を追加する場合は以下のようにします(goファイルが存在しないと失敗します)
-$ # dep ensure -add github.com/{username}/{repository}
+$ echo '
+module xyz/go-uuid
+
+require github.com/satori/go.uuid master
+'>go.mod
 
 $ go build
-$ ./go-hello
-hello!
+$ ./go-uuid
+ca4d9324-5813-4ffe-a242-8a1ba6f7c200
 ```
 
 
 ## 参考
 - https://qiita.com/makoto1007/items/9400d232f5673b34abda
+- https://qiita.com/lufia/items/67701e2f927c77a75d6e
