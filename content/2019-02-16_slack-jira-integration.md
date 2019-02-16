@@ -20,8 +20,8 @@ SlackとJIRAを連携するには、Jira Cloudを使うか、Jira Server Alerts�
 
 
 ## 環境要件
-- Slack 2019-02-15現在
-- Atlassian JIRA 2019-02-15現在
+- Slack 2019-02-16現在
+- Atlassian JIRA 2019-02-16現在
 - 連携するJIRAのサイト管理者権限を持っていること
 
 
