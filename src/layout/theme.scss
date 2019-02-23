@@ -109,27 +109,33 @@ blockquote {
         padding-right: 0;
     }
 
-    .post .post-body {
-        > * {
-            margin-left: 24px;
-            margin-right: 24px;
+    .post {
+        > div {
+            width: 100%;
         }
 
-        ul li,
-        ol li {
-            margin-top: 10px;
-        }
-
-        .gatsby-highlight,
-        .gatsby-resp-image-wrapper {
-            max-width: none !important;
-            margin-left: -24px !important;
-            margin-right: -24px !important;
-        }
-        
-        .gatsby-resp-image-wrapper {
-            border: 1px solid $md-grey-200;
-            border-width: 1px 0;
+        .post-body {
+            > * {
+                margin-left: 24px;
+                margin-right: 24px;
+            }
+    
+            ul li,
+            ol li {
+                margin-top: 10px;
+            }
+    
+            .gatsby-highlight,
+            .gatsby-resp-image-wrapper {
+                max-width: none !important;
+                margin-left: -24px !important;
+                margin-right: -24px !important;
+            }
+            
+            .gatsby-resp-image-wrapper {
+                border: 1px solid $md-grey-200;
+                border-width: 1px 0;
+            }
         }
     }
 }
