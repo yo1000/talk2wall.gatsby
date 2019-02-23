@@ -48,7 +48,8 @@ fun main(args: Array<String>) {
         "file://./abc/def",
         "file://../abc/def"
     ).forEach {
-        println("${it.padEnd(17)} -> ${Paths.get(URL(it).toURI().schemeSpecificPart)}")
+        val path = Paths.get(URL(it).toURI().schemeSpecificPart)
+        println("${it.padEnd(17)} -> $path")
     }
 }
 
