@@ -1,0 +1,3 @@
+# Redirect default Netlify subdomain to primary domain
+https://hopeful-chandrasekhar-b6b82c.netlify.com/* https://www.yo1000.com/:splat 301!
+
