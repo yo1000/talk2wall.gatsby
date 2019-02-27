@@ -46,7 +46,9 @@ a:link {
 .md-card-text,
 html, p,
 h4, h5, h6 {
-    font-feature-settings: "palt";
+    font-feature-settings: "pkna";
+    font-variant-ligatures: no-common-ligatures;
+
     letter-spacing: .0234375rem;
 }
 
@@ -73,7 +75,7 @@ ul, ol {
 }
 
 blockquote {
-    margin: .5rem -24px;
+    margin: .5rem -24px 10px -24px;
     padding: 1rem calc(1rem + 24px - 6px);
     border-left: 6px solid rgba(119, 136, 153, .5); // slategray 50%
     background: #f5f2f0;
@@ -140,11 +142,15 @@ blockquote {
     }
 }
 
+code[class*="language-"], pre[class*="language-"] {
+    text-shadow: none;
+}
+
 .gatsby-highlight {
     width: calc(100% + 48px + 2rem);
     background: none;
     border: 0;
-    margin: 0.5em 0;
+    margin: .5rem 0;
     padding: 0 1rem;
     overflow: auto;
 
@@ -159,18 +165,19 @@ blockquote {
 
     .gatsby-highlight-code-line {
         display: block;
-        margin-right: -1em;
+        margin-right: -1rem;
         margin-left: -1.75rem;
-        padding-left: 1.5em;
-        border-left: 0.25em solid #f99;
+        padding-left: 1.25rem;
+        border-left: 0.5rem solid #faa;
     }
 
     pre[class*="language-"].line-numbers {
         padding: .5rem 5rem;
 
         .gatsby-highlight-code-line {
-            margin-left: -1em;
-            padding-left: .75em;
+            margin-left: -5rem;
+            padding-left: 1rem;
+            border-left: 4rem solid #fcc;
         }
     }
 
@@ -186,5 +193,5 @@ blockquote {
 
 .main-content :not(pre) > code[class*="language-"] {
     margin: 0 .0625rem;
-    padding: 0.0625rem .375rem;
+    padding: .0625rem .375rem;
 }
