@@ -75,7 +75,7 @@ ul, ol {
 }
 
 blockquote {
-    margin: .5rem -24px 10px -24px;
+    margin: 10px -24px;
     padding: 1rem calc(1rem + 24px - 6px);
     border-left: 6px solid rgba(119, 136, 153, .5); // slategray 50%
     background: #f5f2f0;
@@ -150,7 +150,7 @@ code[class*="language-"], pre[class*="language-"] {
     width: calc(100% + 48px + 2rem);
     background: none;
     border: 0;
-    margin: .5rem 0;
+    margin: 10px 0;
     padding: 0 1rem;
     overflow: auto;
 
