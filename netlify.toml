@@ -6,5 +6,5 @@
 [[redirects]]
   from = "https://yo1000.netlify.com"
   to = "https://www.yo1000.com"
-  status = 200
+  status = 301
   force = true
