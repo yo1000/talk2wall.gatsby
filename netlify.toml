@@ -3,3 +3,7 @@
   command = "npm run build"
 [build.environment]
   NPM_VERSION = "6.5.0"
+[[redirects]]
+  from = "https://hopeful-chandrasekhar-b6b82c.netlify.com/*"
+  to   = "https://www.yo1000.com/:splat"
+  status = 301
