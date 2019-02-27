@@ -4,5 +4,5 @@
 [build.environment]
   NPM_VERSION = "6.5.0"
 [[redirects]]
-  from = "//hopeful-chandrasekhar-b6b82c.netlify.com/*"
-  to = "//www.yo1000.com/:splat 301!"
+  from = "//yo1000.netlify.com/*"
+  to = "//www.yo1000.com/:splat"
