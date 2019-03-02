@@ -50,5 +50,5 @@ module.exports = {
       iconClassName: "fa fa-paper-plane"
     }
   ],
-  copyright: "Copyright © 2018. Yoichi KIKUCHI | yo1000" // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2017-2019. YO!CHI KIKUCHI | yo1000" // Copyright string for the footer of the website and RSS feed.
 };
