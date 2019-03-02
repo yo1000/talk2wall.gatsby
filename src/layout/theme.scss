@@ -5,7 +5,7 @@ $md-tertiary-color: $md-grey-50;                        // $md-grey-300;
 
 header.md-background--primary {
     background: #f8d148; /* Old browsers */
-    
+
     // header width: 100%
     // background: -moz-linear-gradient(left, #f8d148 15%, #e03022 55%, #550c06 90%); /* FF3.6-15 */
     // background: -webkit-linear-gradient(left, #f8d148 15%,#e03022 55%,#550c06 90%); /* Chrome10-25,Safari5.1-6 */
@@ -212,6 +212,10 @@ code[class*="language-"], pre[class*="language-"] {
     padding: .0625rem .375rem;
 }
 
+.post-suggestion:last-of-type {
+    text-align: right;
+}
+
 /* media */
 .mobile-fix.post-overlap-mobile {
     margin-top: -106px !important;
@@ -234,6 +238,29 @@ code[class*="language-"], pre[class*="language-"] {
 
     .post-page-contents .post .post-body > h1 {
         margin-top: 14px !important;
+    }
+    
+    .post-suggestions {
+        .post-suggestion {
+            .md-icon {
+                height: 100% !important;
+                font-size: 24px !important;
+            }
+
+            .md-icon.arrow-nav {
+                margin-top: 0;
+            }
+
+            .md-headline {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .post-suggestions.md-grid {
+        padding: 12px 8px;
     }
 }
 
