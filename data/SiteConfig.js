@@ -46,7 +46,7 @@ module.exports = {
     },
     {
       label: "Email",
-      url: "mailto:yoichi.kikuchi.aug@gmail.com",
+      url: "mailto:i@yo1000.com",
       iconClassName: "fa fa-paper-plane"
     }
   ],
