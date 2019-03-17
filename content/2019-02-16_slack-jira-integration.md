@@ -52,6 +52,9 @@ Slack上の連携したいチャネル上で、`/jira connect <instancename>.atl
 
 ![JIRA Slack integration settings](2019-02-16_slack-jira4.png)
 
+なお、JIRAでSlack連携の設定画面を再び表示するには、JIRAと連携済みのSlackチャネル上で、`/jira`コマンドを実行します。コマンドを実行すると、`Manage subscription`リンクが表示され、これをクリックすると設定画面へ移動できます。
+
+![JIRA Slack integration settings link](2019-02-16_slack-jira5.png)
 
 ## 参考
 - [Jira と Slack を連携させる - Jira Cloud](https://get.slack.help/hc/ja/articles/218475657-Jira-%E3%81%A8-Slack-%E3%82%92%E9%80%A3%E6%90%BA%E3%81%95%E3%81%9B%E3%82%8B#jira-cloud-1)
